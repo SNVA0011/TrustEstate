@@ -1,4 +1,11 @@
-/*import external css*/
+/* font family css */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Niconne&display=swap');
+
+/* import external css */
+@import "header.css";
+@import "footer.css";
+
+/* global css */
 html {
   font-display: swap;
   padding-top: constant(safe-area-inset-top);
@@ -118,7 +125,7 @@ img {
 
 @media(min-width:1265px) {
   .container {
-    max-width: 1235px
+    max-width: 1232px
   }
 }
 
