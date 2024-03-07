@@ -1,0 +1,175 @@
+
+
+.btn {
+    display: inline-block; 
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #00C194;
+    padding: 11px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    min-width: 135px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: "Mulish", sans-serif;
+}
+.btn.btnsite-greenfill {
+    border-color: #00c194;
+    background-color: #00c194;
+    color: #ffffff;
+}
+
+.btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn:after,.ratioFind::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.70);
+    transition: none;
+    transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+}
+
+.btn.btnsite-whitefill {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.viewTrustable .container:hover .btn.btnsite-whitefill,
+.btn.btnsite-whitefill:hover {
+    border-color: #00c194;
+    background-color: #00c194;
+    color: #ffffff;
+}
+
+.ratioFind.WorldProp::after,
+.ratioFind.whtchp-cir-wrap::after{
+    background-color: rgba(255, 255, 255, 0.50);
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+}
+ 
+
+.viewTrustable .container:hover .btn.btnsite-whitefill::after,
+.card-WorldProp:hover .ratioFind::after,
+.CheapProperty-box a:hover .ratioFind::after,
+.btn:hover:after {
+    width: 150%;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.4s ease-in-out;
+    transition-delay: 180ms;
+    -webkit-transition-delay: 180ms;
+    -moz-transition-delay: 180ms;
+    -ms-transition-delay: 180ms;
+    -o-transition-delay: 180ms;
+}
+
+.CheapProperty-box a:hover .ratioFind::after{
+    transition-delay: 210ms;
+    -webkit-transition-delay: 210ms;
+    -moz-transition-delay: 210ms;
+    -ms-transition-delay: 210ms;
+    -o-transition-delay: 210ms; 
+}
+
+.btnsite-outline {
+    color: #000;
+}
+
+.btnsite-outline:hover {
+    background-color: #00C194;
+    color: #ffffff;
+}
+
+@-webkit-keyframes fadeInBtbimg {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInBtbimg {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.btnsite-outline:hover img.after,
+.btnsite-outline img.before {
+    display: inline-block;
+    -webkit-animation-name: fadeInBtbimg;
+    animation-name: fadeInBtbimg;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 180ms;
+    animation-delay: 180ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.btnsite-outline:hover img.before,
+.btnsite-outline img.after {
+    display: none;
+}
+
+
+.btn img {
+    width: 14px;
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle;
+}

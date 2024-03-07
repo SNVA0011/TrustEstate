@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="utf-8">
-   <meta httpEquiv="X-UA-Compatible" content="IE=edge" /> 
+   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -27,7 +27,42 @@
 
 <body>
 
+   <!--========= site-header =========-->
+   <header class="site-header" id="headerSite">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="bsCol col-md-3">
+               <div class="navbar-brand">
+                  <a href="/">
+                     <img src="/images/trsutestate-logo-header.webp" class="logo-width-global" alt="header-logo" />
+                  </a>
+               </div>
+            </div>
+            <div class="bsCol col-md-6">
+               <nav class="header-mainMenu-nav d-none d-lg-block mx-auto">
+                  <ul class="header-mainMenu">
+                     <li><a href="/" class="active"><span>Rent</span></a></li>
+                     <li><a href="/#"><span>Buy</span></a></li>
+                     <li><a href="/#"><span>About Us</span></a></li>
+                     <li class=""><a href="/contact-us"><span>Contact Us</span></a></li>
+                  </ul>
+               </nav> 
+            </div>
+            <div class="bsCol col-md-3 text-right-nvhead">
+               <div class="btn-login-toggler">
+                  <button class="btn btnsite-outline">
+                     <span>
+                        Login
+                     </span>
+                  </button>
+               </div>
+            </div>
+         </div> 
 
+      </div>
+   </header>
+   <div class="siteheader-empty"  id="headerSite-empty"></div>
+   <!--======= end site-header =======-->
 
    <!--======= ExploreSrcBlock =======-->
    <section class="explore_ExploreSrcBlock">
@@ -410,10 +445,10 @@
    </section>
    <!--======= end viewTrustable =======-->
 
-   <!--========= explorFooter =========-->
-   <footer class="explorFooter">
+   <!--========= site-footer =========-->
+   <footer class="site-footer">
       <div class="viewTrustable-empty"></div>
-      <div class="container explorFooter-body">
+      <div class="container site-footer-body">
          <div class="row">
             <div class="bsCol col-md-3">
                <a href="/">
@@ -424,14 +459,16 @@
             </div>
             <div class="bsCol col-md-3">
                <h4>Quick Links</h4>
-               <ul class="explorFooter-quick">
-                  <li><a href="#"><img src="/images/right-menudbl.webp" alt="arrow-double" class="exdbl" /> About Us</a></li>
-                  <li><a href="#"><img src="/images/right-menudbl.webp" alt="arrow-double" class="exdbl" /> Contact Us</a></li>
+               <ul class="site-footer-quick">
+                  <li><a href="#"><img src="/images/right-menudbl.webp" alt="arrow-double" class="exdbl" /> About Us</a>
+                  </li>
+                  <li><a href="#"><img src="/images/right-menudbl.webp" alt="arrow-double" class="exdbl" /> Contact
+                        Us</a></li>
                </ul>
             </div>
             <div class="bsCol col-md-3">
                <h4>Connect With Us</h4>
-               <ul class="explorFooter-quick">
+               <ul class="site-footer-quick">
                   <li><a href="http://maps.google.com/?q=301 B, St George, UT  84770, USA" target="_blank">
                         <img src="/images/location-whiteic.webp" alt="location" /> 301 B, St George, UT 84770, USA
                      </a>
@@ -448,34 +485,33 @@
             </div>
             <div class="bsCol col-md-3">
                <h4>Newsletter</h4>
-
                <div class="newsletter-footer">
-                  <input type="email" id="username" class="form-control-news" required="" placeholder="Enter your email address">
+                  <input type="email" id="username" class="form-control-news" required=""
+                     placeholder="Enter your email address">
                   <div class="newsletter-line"></div>
                   <button class="btn btnsite-greenfill"><span>Subscribe Now</span></button>
                </div>
-
             </div>
          </div>
       </div>
       <hr />
-      <div class="container explorFooter-copyright">
+      <div class="container site-footer-copyright">
          <div class="row align-items-center">
             <div class="bsCol col-md-6">
                © 2023, All Rights Reserved
             </div>
             <div class="bsCol col-md-6 socialft-right">
-               <ul class="explorFooter-social">
-                  <li><a href="#" target="_blank"><img src="/images/footer-twit.webp" alt="twitter"/></a></li>
-                  <li><a href="#" target="_blank"><img src="/images/footer-facebook.webp" alt="facebook"/></a></li>
-                  <li><a href="#" target="_blank"><img src="/images/footer-instr.webp" alt="Instagram"/></a></li>
-                  <li><a href="#" target="_blank"><img src="/images/footer-github.webp" alt="github"/></a></li>
+               <ul class="site-footer-social">
+                  <li><a href="#" target="_blank"><img src="/images/footer-twit.webp" alt="twitter" /></a></li>
+                  <li><a href="#" target="_blank"><img src="/images/footer-facebook.webp" alt="facebook" /></a></li>
+                  <li><a href="#" target="_blank"><img src="/images/footer-instr.webp" alt="Instagram" /></a></li>
+                  <li><a href="#" target="_blank"><img src="/images/footer-github.webp" alt="github" /></a></li>
                </ul>
             </div>
          </div>
       </div>
    </footer>
-   <!--======= end explorFooter =======-->
+   <!--======= end site-footer =======-->
 
 
    <script type="text/javascript" src="/js/animateOnscroll.js"></script>
