@@ -13,12 +13,20 @@
    <meta name="keywords" content="Trust Estate" />
    <link rel="canonical" href="" />
 
+   <!-- Preload All CSS -->
+   <link rel="preload" href="/css/bootstrap-grid.min.css" as="style">
+   <link rel="preload" href="/css/main.css" as="style">
+   <link rel="preload" href="/css/home.css" as="style">
+
+   <!-- Preload Image for LCP -->
+   <link rel="preload" fetchpriority="high" as="image" href="/images/banner-home-large.webp" type="image/webp">
+
    <!-- Bootstrap core CSS -->
-   <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
 
    <!-- Custom styles for this template -->
-   <link href="/css/main.css" rel="stylesheet">
-   <link href="/css/home.css" rel="stylesheet">
+   <link rel="stylesheet" href="/css/main.css">
+   <link rel="stylesheet" href="/css/home.css">
 
    <!-- Favicons -->
    <link rel="icon" href="/favicon.ico">
@@ -34,7 +42,7 @@
             <div class="bsCol col-md-3">
                <div class="navbar-brand">
                   <a href="/">
-                     <img src="/images/trsutestate-logo-header.webp" class="logo-width-global" alt="header-logo" />
+                     <img src="/images/trsutestate-logo-header.webp" class="logo-width-global" alt="header-logo"  width="182" height="49" />
                   </a>
                </div>
             </div>
@@ -46,7 +54,7 @@
                      <li><a href="/#"><span>About Us</span></a></li>
                      <li class=""><a href="/contact-us"><span>Contact Us</span></a></li>
                   </ul>
-               </nav> 
+               </nav>
             </div>
             <div class="bsCol col-md-3 text-right-nvhead">
                <div class="btn-login-toggler">
@@ -57,15 +65,50 @@
                   </button>
                </div>
             </div>
-         </div> 
+         </div>
 
       </div>
    </header>
-   <div class="siteheader-empty"  id="headerSite-empty"></div>
+   <div class="siteheader-empty" id="headerSite-empty"></div>
    <!--======= end site-header =======-->
 
+
    <!--======= ExploreSrcBlock =======-->
-   <section class="explore_ExploreSrcBlock">
+   <section class="engine-banner">
+      <div class="container">
+         <div class="row">
+            <div class="bsCol col-12 col-md-6">
+               <h3> Real Estate<br>
+                  Without any <span>Hassle</span></h3>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur.<br>
+                  Ullamcorper sit aliquet aenean risus ut in curabitur. risus ut in curabitur.
+               </p>
+
+               <ul>
+                  <li>
+                     <span>10k</span>
+                     Our Happy Customer
+                  </li>
+                  <li>
+                     <span>8k</span>
+                     Exclusive Agents
+                  </li>
+               </ul>
+            </div>
+
+            <div class="bsCol col-12 col-md-6">
+               <div class="ratioFind engine-img-wrap">
+                  <img src="/images/banner-home-large.webp" alt="Cheapest Property 1" class="whtchp-cover">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--======= ExploreSrcBlock =======-->
+
+   <!--======= ExploreSrcBlock =======-->
+   <section class="explore-explore-srcblock">
       <div class="container">
          <div class="titleui_center">
             <p class="titleui_SecSubTitle">Top Areas</p>
@@ -178,8 +221,8 @@
                   <a href="#" class="btn btnsite-outline">
                      <span>
                         Explore all
-                        <img src="/images/explore-all.webp" class="before" alt="explore-all" />
-                        <img src="/images/explore-all-white.webp" class="after" alt="explore-all-white" />
+                        <img src="/images/explore-all.webp" class="before" alt="explore-all" width="14" height="10" />
+                        <img src="/images/explore-all-white.webp" class="after" alt="explore-all-white" width="27" height="20" />
                      </span>
                   </a>
                </div>
@@ -196,7 +239,7 @@
                            <h4>New York </h4>
                            <p>Starting from $500 </p>
                            <div class="whtchp-circle">
-                              <img src="/images/chpprop-box-arrow.webp" class="whtchp-cir-round" alt="box-arrow">
+                              <img src="/images/chpprop-box-arrow.webp" class="whtchp-cir-round" alt="box-arrow" width="33" height="33">
                            </div>
                         </div>
                      </div>
@@ -213,7 +256,7 @@
                            <h4>Abu Dhabi</h4>
                            <p>Starting from $500 </p>
                            <div class="whtchp-circle">
-                              <img src="/images/chpprop-box-arrow.webp" class="whtchp-cir-round" alt="box-arrow">
+                              <img src="/images/chpprop-box-arrow.webp" class="whtchp-cir-round" alt="box-arrow" width="33" height="33">
                            </div>
                         </div>
                      </div>
@@ -229,7 +272,7 @@
                            <h4>London</h4>
                            <p>Starting from $500 </p>
                            <div class="whtchp-circle">
-                              <img src="/images/chpprop-box-arrow.webp" class="whtchp-cir-round" alt="box-arrow">
+                              <img src="/images/chpprop-box-arrow.webp" class="whtchp-cir-round" alt="box-arrow" width="33" height="33">
                            </div>
                         </div>
                      </div>
@@ -246,7 +289,7 @@
                            <h4>Tokyo</h4>
                            <p>Starting from $500 </p>
                            <div class="whtchp-circle">
-                              <img src="/images/chpprop-box-arrow.webp" class="whtchp-cir-round" alt="box-arrow">
+                              <img src="/images/chpprop-box-arrow.webp" class="whtchp-cir-round" alt="box-arrow" width="33" height="33">
                            </div>
                         </div>
                      </div>
@@ -298,8 +341,8 @@
                <a href="#" class="btn btnsite-outline">
                   <span>
                      View more
-                     <img src="/images/explore-all.webp" class="before" alt="explore-all">
-                     <img src="/images/explore-all-white.webp" class="after" alt="explore-all-white">
+                     <img src="/images/explore-all.webp" class="before" alt="explore-all" width="14" height="10" />
+                     <img src="/images/explore-all-white.webp" class="after" alt="explore-all-white" width="27" height="20" />
                   </span>
                </a>
             </div>
@@ -328,15 +371,19 @@
                      </div>
 
                      <p>
-                        <img src="/images/basil-location-outline.webp" alt="location" class="WorldProp-icon">
+                        <img src="/images/basil-location-outline.webp" alt="location" class="WorldProp-icon" width="18" height="19">
                         148-37 88Th Ave , Jamaica , Abu Dhabi
                      </p>
 
                      <ul>
-                        <li><img src="/images/light-bed-outline.webp" alt="Beds" class="WorldProp-icon"> 5 Beds</li>
-                        <li><img src="/images/iconoir-bathroom.webp" alt="Baths" class="WorldProp-icon"> 2 Baths</li>
-                        <li><img src="/images/floor-icon.webp" alt="Sqft" class="WorldProp-icon"> 300 Sqft</li>
-                        <li><img src="/images/carbon-floorplan.webp" alt="Floor" class="WorldProp-icon"> 5 Floor</li>
+                        <li><img src="/images/light-bed-outline.webp" alt="Beds" class="WorldProp-icon" width="18"
+                              height="18"> 5 Beds</li>
+                        <li><img src="/images/iconoir-bathroom.webp" alt="Baths" class="WorldProp-icon" width="18"
+                              height="18"> 2 Baths</li>
+                        <li><img src="/images/floor-icon.webp" alt="Sqft" class="WorldProp-icon" width="18" height="18">
+                           300 Sqft</li>
+                        <li><img src="/images/carbon-floorplan.webp" alt="Floor" class="WorldProp-icon" width="18"
+                              height="18"> 5 Floor</li>
                      </ul>
                   </div>
 
@@ -364,15 +411,19 @@
                      </div>
 
                      <p>
-                        <img src="/images/basil-location-outline.webp" alt="location" class="WorldProp-icon">
+                        <img src="/images/basil-location-outline.webp" alt="location" class="WorldProp-icon" width="18" height="19">
                         148-37 88Th Ave , Jamaica , Abu Dhabi
                      </p>
 
                      <ul>
-                        <li><img src="/images/light-bed-outline.webp" alt="Beds" class="WorldProp-icon"> 5 Beds</li>
-                        <li><img src="/images/iconoir-bathroom.webp" alt="Baths" class="WorldProp-icon"> 2 Baths</li>
-                        <li><img src="/images/floor-icon.webp" alt="Sqft" class="WorldProp-icon"> 300 Sqft</li>
-                        <li><img src="/images/carbon-floorplan.webp" alt="Floor" class="WorldProp-icon"> 5 Floor</li>
+                        <li><img src="/images/light-bed-outline.webp" alt="Beds" class="WorldProp-icon" width="18"
+                              height="18"> 5 Beds</li>
+                        <li><img src="/images/iconoir-bathroom.webp" alt="Baths" class="WorldProp-icon" width="18"
+                              height="18"> 2 Baths</li>
+                        <li><img src="/images/floor-icon.webp" alt="Sqft" class="WorldProp-icon" width="18" height="18">
+                           300 Sqft</li>
+                        <li><img src="/images/carbon-floorplan.webp" alt="Floor" class="WorldProp-icon" width="18"
+                              height="18"> 5 Floor</li>
                      </ul>
                   </div>
 
@@ -400,15 +451,19 @@
                      </div>
 
                      <p>
-                        <img src="/images/basil-location-outline.webp" alt="location" class="WorldProp-icon">
+                        <img src="/images/basil-location-outline.webp" alt="location" class="WorldProp-icon" width="18" height="19">
                         148-37 88Th Ave , Jamaica , Abu Dhabi
                      </p>
 
                      <ul>
-                        <li><img src="/images/light-bed-outline.webp" alt="Beds" class="WorldProp-icon"> 5 Beds</li>
-                        <li><img src="/images/iconoir-bathroom.webp" alt="Baths" class="WorldProp-icon"> 2 Baths</li>
-                        <li><img src="/images/floor-icon.webp" alt="Sqft" class="WorldProp-icon"> 300 Sqft</li>
-                        <li><img src="/images/carbon-floorplan.webp" alt="Floor" class="WorldProp-icon"> 5 Floor</li>
+                        <li><img src="/images/light-bed-outline.webp" alt="Beds" class="WorldProp-icon" width="18"
+                              height="18"> 5 Beds</li>
+                        <li><img src="/images/iconoir-bathroom.webp" alt="Baths" class="WorldProp-icon" width="18"
+                              height="18"> 2 Baths</li>
+                        <li><img src="/images/floor-icon.webp" alt="Sqft" class="WorldProp-icon" width="18" height="18">
+                           300 Sqft</li>
+                        <li><img src="/images/carbon-floorplan.webp" alt="Floor" class="WorldProp-icon" width="18"
+                              height="18"> 5 Floor</li>
                      </ul>
                   </div>
 
@@ -452,7 +507,7 @@
          <div class="row">
             <div class="bsCol col-md-3">
                <a href="/">
-                  <img src="/images/trsutestate-logo-footer.webp" class="logo-width-global" alt="footer-logo" />
+                  <img src="/images/trsutestate-logo-footer.webp" class="logo-width-global" alt="footer-logo" width="182" height="49" />
                </a>
                <p class="footer-logo-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
                   dolor sit amet, consectetur adipiscing elit.</p>
@@ -460,9 +515,9 @@
             <div class="bsCol col-md-3">
                <h4>Quick Links</h4>
                <ul class="site-footer-quick">
-                  <li><a href="#"><img src="/images/right-menudbl.webp" alt="arrow-double" class="exdbl" /> About Us</a>
+                  <li><a href="#"><img src="/images/right-menudbl.webp" alt="arrow-double" class="exdbl"  width="10" height="10" /> About Us</a>
                   </li>
-                  <li><a href="#"><img src="/images/right-menudbl.webp" alt="arrow-double" class="exdbl" /> Contact
+                  <li><a href="#"><img src="/images/right-menudbl.webp" alt="arrow-double" class="exdbl"  width="10" height="10" /> Contact
                         Us</a></li>
                </ul>
             </div>
@@ -470,15 +525,17 @@
                <h4>Connect With Us</h4>
                <ul class="site-footer-quick">
                   <li><a href="http://maps.google.com/?q=301 B, St George, UT  84770, USA" target="_blank">
-                        <img src="/images/location-whiteic.webp" alt="location" /> 301 B, St George, UT 84770, USA
+                        <img src="/images/location-whiteic.webp" alt="location" width="18" height="18" /> 301 B, St
+                        George, UT 84770, USA
                      </a>
                   </li>
                   <li><a href="mailto:support@trsutestate.com" target="_blank">
-                        <img src="/images/ic_outline-email.webp" alt="email" /> support@trsutestate.com
+                        <img src="/images/ic_outline-email.webp" alt="email" width="18" height="18" />
+                        support@trsutestate.com
                      </a>
                   </li>
                   <li><a href="tel:+1-802-458-5452" target="_blank">
-                        <img src="/images/solar_phone-linear.webp" alt="phone" /> +1-802-458-5452
+                        <img src="/images/solar_phone-linear.webp" alt="phone" width="18" height="18" /> +1-802-458-5452
                      </a>
                   </li>
                </ul>
@@ -502,10 +559,14 @@
             </div>
             <div class="bsCol col-md-6 socialft-right">
                <ul class="site-footer-social">
-                  <li><a href="#" target="_blank"><img src="/images/footer-twit.webp" alt="twitter" /></a></li>
-                  <li><a href="#" target="_blank"><img src="/images/footer-facebook.webp" alt="facebook" /></a></li>
-                  <li><a href="#" target="_blank"><img src="/images/footer-instr.webp" alt="Instagram" /></a></li>
-                  <li><a href="#" target="_blank"><img src="/images/footer-github.webp" alt="github" /></a></li>
+                  <li><a href="#" target="_blank"><img src="/images/footer-twit.webp" alt="twitter" width="22"
+                           height="18" /></a></li>
+                  <li><a href="#" target="_blank"><img src="/images/footer-facebook.webp" alt="facebook" width="10"
+                           height="18" /></a></li>
+                  <li><a href="#" target="_blank"><img src="/images/footer-instr.webp" alt="Instagram" width="18"
+                           height="18" /></a></li>
+                  <li><a href="#" target="_blank"><img src="/images/footer-github.webp" alt="github" width="18"
+                           height="18" /></a></li>
                </ul>
             </div>
          </div>
@@ -514,7 +575,7 @@
    <!--======= end site-footer =======-->
 
 
-   <script type="text/javascript" src="/js/animateOnscroll.js"></script>
+   <script type="text/javascript" src="/js/custom.js"></script>
 
 
 </body>

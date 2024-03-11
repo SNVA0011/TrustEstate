@@ -172,4 +172,6 @@
     display: inline-block;
     margin-left: 8px;
     vertical-align: middle;
+    vertical-align: middle;
+    margin-top: -2px;
 }
