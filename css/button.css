@@ -32,8 +32,16 @@
     border-color: #00c194;
     background-color: #00c194;
     color: #ffffff;
+    -webkit-transition-delay: 220ms;
+       -moz-transition-delay: 220ms;
+         -o-transition-delay: 220ms;
+            transition-delay: 220ms;
 }
 
+.btn.btnsite-greenfill:hover{
+    border-color: #009d78;
+    background-color: #009d78;
+}
 .btn span {
     position: relative;
     z-index: 2;
