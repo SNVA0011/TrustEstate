@@ -11,10 +11,11 @@ window.onclick = function (event) {
     }
 }
 
-function openEngineMenu(event) {
+function openEngineMenu(event) { 
     document.querySelectorAll('.listed-dropmenu').forEach(function (el) {
         el.classList.remove("show");
     });
+
     event.target.nextElementSibling.classList.toggle("show");
     event.stopPropagation();
 }
@@ -23,16 +24,34 @@ function eventStopPagation(event) {
     event.stopPropagation();
 }
 
-function closeModalPopup(val) {
-    document.getElementById(val).classList.remove('show');
-}
 
-function openListedTyoe(val, type) {
+
+function openListedType(val, type) {
     document.getElementById("proplisttyp").innerHTML = val
 
-  if(type === 'popup'){ 
-    setTimeout(()=>{                   
-        document.getElementById("CustomerInfo").classList.add('show');
+    // animate on change
+    document.getElementById("proplisttyp").classList.add('active');
+    setTimeout(() => {
+        document.getElementById("proplisttyp").classList.remove('active');
+    }, 500)
+
+    // type if popup
+    if (type === 'popup') {
+        setTimeout(() => {
+            document.getElementById("CustomerInfo").classList.add('show')
+        }, 500);
+    }
+}
+
+
+function openModalPopup(id) {
+    document.getElementById(id).classList.add('show')
+}
+
+function closeModalPopup(val) {
+    document.getElementById(val).classList.add('fadeout');
+    setTimeout(() => {
+        document.getElementById(val).classList.remove('show');
+        document.getElementById(val).classList.remove('fadeout');
     }, 500);
-  }
 }

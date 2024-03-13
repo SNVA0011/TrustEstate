@@ -61,7 +61,7 @@
             </div>
             <div class="bsCol wauto-head">
                <div class="btn-login-toggler">
-                  <button class="btn btnsite-outline">
+                  <button class="btn btnsite-outline" onclick="openModalPopup('CustomerSignin')">
                      <span>
                         Login
                      </span>
@@ -108,12 +108,14 @@
             <div class="listed-proptby">
                <span class="listed-prop-own-text">I am </span>
                <div class="listed-prop-own">
-                  <button class="listed-typebtn" id="proplisttyp" onclick="openEngineMenu(event)">Buyer</button>
+                  <button class="listed-typebtn" onclick="openEngineMenu(event)">
+                     <span id="proplisttyp">Buyer</span>
+                  </button>
                   <div class="listed-dropmenu own">
                      <ul class="listed-menu-proptby">
-                        <li onclick="openListedTyoe('Buyer', 'menu')"><span>Buyer</span></li>
-                        <li onclick="openListedTyoe('Owner', 'popup')"><span>Owner</span></li>
-                        <li onclick="openListedTyoe('Tenant', 'menu')"><span>Tenant</span></li>
+                        <li onclick="openListedType('Buyer', 'menu')"><span>Buyer</span></li>
+                        <li onclick="openListedType('Owner', 'popup')"><span>Owner</span></li>
+                        <li onclick="openListedType('Tenant', 'menu')"><span>Tenant</span></li>
                      </ul>
                   </div>
                </div>
@@ -366,7 +368,6 @@
    <section class="explore-explore-srcblock">
       <div class="container">
          <div class="titleui_center">
-            <p class="titleui_SecSubTitle">Top Areas</p>
             <h4 class="titleui_SectionTitle ">Property by cities</h4>
          </div>
 
@@ -469,7 +470,6 @@
          <div class="container">
             <div class="row findthebest">
                <div class="bsCol col-6">
-                  <p class="titleui_SecSubTitle">Find the best </p>
                   <h4 class="titleui_SectionTitle">Cheapest Property </h4>
                </div>
                <div class="bsCol col-6 text-right-expl">
@@ -563,38 +563,11 @@
    </section>
    <!--======= CheapProperty =======-->
 
-   <!--======= HappyCustomerAchv =======-->
-   <section class="HappyCustomerAchv">
-      <div class="container">
-         <div class="row align-items-center">
-            <div class="col-12 col-md-3">
-               <h4><span id="hapcusnum">0</span>k</h4>
-               <p>Our Happy Customer</p>
-            </div>
-            <div class="col-12 col-md-3">
-               <h4><span id="offlocnum">0</span>+</h4>
-               <p>Our Office Locations</p>
-            </div>
-            <div class="col-12 col-md-3">
-               <h4><span id="proptynum">0</span>k</h4>
-               <p>Total Property Sale</p>
-            </div>
-            <div class="col-12 col-md-3">
-               <h4><span id="agenetnum">0</span></h4>
-               <p>Real Estate Agent</p>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!--======= HappyCustomerAchv =======-->
-
-
    <!--========= exploreWorldProp =========-->
    <section class="exploreWorldProp">
       <div class="container">
          <div class="row findthebest">
             <div class="bsCol col-6">
-               <p class="titleui_SecSubTitle">Exploring the world </p>
                <h4 class="titleui_SectionTitle">Latest Properties </h4>
             </div>
             <div class="bsCol col-6 text-right-expl">
@@ -844,18 +817,79 @@
 
 
    <!--========= Popups (Customer required information Popup) =========-->
-   <div class="modal-site" id="CustomerInfo" onclick="closeModalPopup('CustomerInfo')"> 
+   <div class="modal-site" id="CustomerInfo" onclick="closeModalPopup('CustomerInfo')">
       <div class="modal-dialog-centered">
-       <div class="modal-site-body" onclick="eventStopPagation(event)">
-         <div class="modal-site-close" onclick="closeModalPopup('CustomerInfo')">
-            <img src="/images/close-icon-modal.webp" alt="close-icon-modal" width="28" height="28" />
+         <div class="modal-site-body customer-info-popup" onclick="eventStopPagation(event)">
+            <div class="modal-site-close" onclick="closeModalPopup('CustomerInfo')">
+               <img src="/images/close-icon-modal.webp" alt="close-icon-modal" width="28" height="28" />
+            </div>
+            <div class="lets-start">
+               <h5>Lets Start</h5>
+               <p>Please fill out this form with the required information</p>
+            </div>
+
+            <div class="customerdt-form">
+               <div class="customerdt-label">Your Details</div>
+               <div class="row align-items-center">
+                  <div class="bsCol col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label" for="name-lb">Name</label>
+                        <input type="text" class="form-control" id="name-lb" placeholder="Enter your name">
+                     </div>
+                  </div>
+                  <div class="bsCol col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label" for="lastname-lb">Last Name</label>
+                        <input type="text" class="form-control" id="lastname-lb" placeholder="Enter your last name">
+                     </div>
+                  </div>
+                  <div class="bsCol col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label" for="emailadd-lb">Email </label>
+                        <input type="email" class="form-control" id="emailadd-lb"
+                           placeholder="Enter your email address">
+                     </div>
+                  </div>
+                  <div class="bsCol col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label" for="phone-lb">Phone </label>
+                        <input type="number" class="form-control" id="phone-lb" placeholder="Enter your phone number">
+                     </div>
+                  </div>
+                  <div class="bsCol col-12">
+                     <div class="form-group">
+                        <label class="form-label" for="message-lb">Message </label>
+                        <textarea class="form-control" id="message-lb" placeholder="Enter your Message"></textarea>
+                     </div>
+                  </div>
+                  <div class="bsCol col-12 customerdt-tbn-center">
+                     <button class="btn btnsite-greenfill customerdt-btn"><span>Submit</span></button>
+                  </div>
+               </div>
+
+            </div>
+
          </div>
-         <h3>Lets Start</h3>
-        <p>Please fill out this form with the required information</p>
-       </div>
       </div>
    </div>
    <!--======= End Popups (Customer required information Popup) =======-->
+
+
+      <!--========= Popups (Customer required information Popup) =========-->
+      <div class="modal-site" id="CustomerSignin" onclick="closeModalPopup('CustomerSignin')">
+         <div class="modal-dialog-centered customer-signin-dialog">
+            <div class="modal-site-body customer-signin-popup" onclick="eventStopPagation(event)">
+               <div class="modal-site-close" onclick="closeModalPopup('CustomerSignin')">
+                  <img src="/images/close-icon-modal.webp" alt="close-icon-modal" width="28" height="28" />
+               </div>
+               <div class="lets-start">
+                  <h5>Sign In & Access Your Account</h5> 
+               </div> 
+   
+            </div>
+         </div>
+      </div>
+      <!--======= End Popups (Customer required information Popup) =======-->
 
 
    <script type="text/javascript" src="/js/header-animate.js"></script>
@@ -864,5 +898,4 @@
 
 
 </body>
-
 </html>

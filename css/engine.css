@@ -59,6 +59,7 @@
     user-select: none;
 }
 
+.listed-typebtn::before,
 .engineexp-text .form-control::before,
  .engineexp-text .engineexp-input::before {
     content: '';
@@ -210,11 +211,22 @@ line-height: normal;
     background-size: 24px;
     text-align: left;
     padding: 4px 27px 4px 13px; 
-    font-weight: 800;
+    font-weight: 900;
     color: #3d3d3d;
     font-size: 14px;
     font-style: normal;
     line-height: normal;
+}
+
+.listed-typebtn span{
+    display: block; 
+    pointer-events: none;
+}
+.listed-typebtn span.active{
+    -webkit-animation: slideLink 300ms ease;
+    -moz-animation: slideLink 300ms ease;
+    -o-animation: slideLink 300ms ease;
+    animation: slideLink 300ms ease;
 }
 
 .listed-typebtn:hover {
@@ -579,6 +591,12 @@ ul.listed-menu-proptby li:hover {
 }
 
 /*-------- modal-site --------*/
+.modal-site, .modal-site.fadeout{
+    -webkit-animation-duration: 350ms;
+    animation-duration: 350ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
 .modal-site {
     position: fixed;
     top: 0;
@@ -594,11 +612,7 @@ ul.listed-menu-proptby li:hover {
     overflow-y: auto; 
     background-color: rgb(0 0 0 / 60%);
     -webkit-animation-name: fadeInmodal;
-    animation-name: fadeInmodal;
-    -webkit-animation-duration: 400ms;
-    animation-duration: 400ms;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    animation-name: fadeInmodal; 
  } 
  .modal-site.show{
     display: -webkit-box;
@@ -615,6 +629,22 @@ ul.listed-menu-proptby li:hover {
     0% {opacity: 0;}
     100% {opacity: 1;}
     } 
+
+    .modal-site.fadeout{
+        -webkit-animation-name: fadeOutmodal;
+        animation-name: fadeOutmodal;  
+    }
+    @-webkit-keyframes fadeOutmodal {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+        }
+        @keyframes fadeOutmodal {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+        } 
+        
+
+
  .modal-dialog-centered {
     max-width: 790px;
     width: 100%;
@@ -646,8 +676,8 @@ ul.listed-menu-proptby li:hover {
     animation-name: fadeInUpListed;
     animation-duration: 0.4s;
     -webkit-animation-duration: 0.4s;
-    animation-delay: 400ms;
-    -webkit-animation-delay: 400ms;
+    animation-delay: 350ms;
+    -webkit-animation-delay: 350ms;
     animation-timing-function: cubic-bezier(.5,0,0,1.25);
     -webkit-animation-timing-function: cubic-bezier(.5,0,0,1.25);
     -webkit-animation-fill-mode: both;
@@ -677,4 +707,110 @@ ul.listed-menu-proptby li:hover {
         -ms-transform: rotate(90deg);
          -o-transform: rotate(90deg);
             transform: rotate(90deg);
+}
+.modal-site-body.customer-info-popup {
+    padding: 29px 40px;
+}
+.lets-start {
+    text-align: center;
+    margin-bottom: 36px;
+}
+.lets-start h5 {
+    color: #3d3d3d;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+.lets-start p {
+    color: #7E7E7E; 
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.customerdt-form {
+    border: solid 2px #00C194;
+    border-radius: 10px;
+    padding: 40px 34px;
+    position: relative;
+}
+.customerdt-label {
+    color: #3d3d3d;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    position: absolute;
+    top: -14px;
+    left: 27px;
+    background-color: #fff;
+    padding: 0 7px;
+}
+.customerdt-form .form-label {
+    color: #585858;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.customerdt-form .form-control {
+    display: block;
+    font-size: 15px;
+    width: 100%;
+    border: solid 1px #fafafa;
+    background: #fbfbfb;
+    color: #121212;
+    resize: none;
+    padding: 12px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-family: "Mulish", sans-serif;
+    -webkit-box-shadow: rgb(0 0 0 / 6%) 0px 1px 2px 0px inset;
+    -moz-box-shadow: rgb(0 0 0 / 6%) 0px 1px 2px 0px inset;
+    box-shadow: rgb(0 0 0 / 6%) 0px 1px 2px 0px inset;
+    transition: all 100ms ease-in;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    -ms-transition: all 100ms ease-in;
+    -o-transition: all 100ms ease-in;
+}
+
+.customerdt-form .form-control,.btn.customerdt-btn {
+    height: 50px;
+}
+
+.btn.customerdt-btn {
+    width: 180px; 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+}
+
+.customerdt-form .form-control:focus {
+    border-color: #00c194;
+    box-shadow: 0 0 0 0.2rem rgb(0 193 148 / 10%);
+    background-color: #ffffff;
+}
+.customerdt-form textarea.form-control {
+    height: 108px;
+}
+
+.customerdt-form .form-group {
+    margin-bottom: 20px;
+}
+ 
+.customerdt-tbn-center {
+    text-align: center;
+    margin-top: 19px;
+}
+.modal-dialog-centered.customer-signin-dialog {
+    max-width: 988px;
 }

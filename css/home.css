@@ -25,7 +25,7 @@
 .titleui_SectionTitle {
     font-size: 28px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     line-height: normal;
     margin-bottom: 44px;
     color: #121212;
@@ -425,38 +425,12 @@
     align-items: end;
 }
 
-.HappyCustomerAchv {
-    padding: 82px 0;
-    background: url('../images/happycustomer-bg.webp') #181A20 repeat-x bottom;
-    text-align: center;
-}
-
-.HappyCustomerAchv p,
-.HappyCustomerAchv h4 {
-    line-height: normal;
-    font-style: normal;
-}
-
-.HappyCustomerAchv h4 {
-    margin-bottom: 3px;
-    color: #00C194;
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.HappyCustomerAchv p {
-    margin-bottom: 0;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 600;
-}
-
 .row.findthebest h4.titleui_SectionTitle {
     margin: 0;
 }
 
 .row.findthebest {
-    margin-bottom: 44px;
+    margin-bottom: 34px;
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
     -moz-box-align: end;
@@ -512,7 +486,7 @@
 
 .card-WorldProp-inner h4 {
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 0;
 }
 
