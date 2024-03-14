@@ -12,3 +12,13 @@
         siteHeaderEmpty.classList.remove('fixed');
     }
 });
+
+ 
+
+function openAccountTab(id) {
+    document.querySelectorAll('.signin-right-acc').forEach(function (el) {
+        el.classList.remove("showsign");
+    });
+
+    document.getElementById(id).classList.add('showsign')
+}

@@ -1,0 +1,77 @@
+.form-site .form-label {
+    color: #585858;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    margin-bottom: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-site .form-control {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    border: solid 1px #fafafa;
+    background: #fbfbfb;
+    color: #121212;
+    resize: none;
+    padding: 12px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-family: "Mulish", sans-serif;
+    -webkit-box-shadow: rgb(0 0 0 / 6%) 0px 1px 2px 0px inset;
+    -moz-box-shadow: rgb(0 0 0 / 6%) 0px 1px 2px 0px inset;
+    box-shadow: rgb(0 0 0 / 6%) 0px 1px 2px 0px inset;
+    transition: all 100ms ease-in;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    -ms-transition: all 100ms ease-in;
+    -o-transition: all 100ms ease-in;
+}
+
+.form-site .form-control,
+.btn.customerdt-btn {
+    height: 50px;
+}
+
+.form-site .form-control:focus {
+    border-color: #00c194;
+    box-shadow: 0 0 0 0.2rem rgb(0 193 148 / 10%);
+    background-color: #ffffff;
+}
+
+.form-site textarea.form-control {
+    height: 108px;
+}
+
+.form-site .form-group {
+    margin-bottom: 20px;
+}
+
+.form-site .form-control.phonereg-1 {
+    width: 71px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.form-site [type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    -ms-appearance: textfield;
+}
+
+.form-site [type="number"]::-webkit-outer-spin-button,
+.form-site [type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    margin: 0;
+}

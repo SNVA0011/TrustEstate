@@ -124,17 +124,6 @@
     background-size: 20px;
 }
 
-.btn.PropTyBtnSearch {
-    min-width: auto;
-    width: 100%;
-    text-align: center;
-}
-
-.btn.PropTyBtnSearch img {
-    margin: 0;
-    max-width: none;
-    width: 32px;
-}
 
 .engineexp-text .form-control.city {
     background-image: url('../images/proptyic-search-line.webp');
@@ -174,14 +163,6 @@
     padding-left: 10px;
 }
 
-.btn.PropTyBtnSearch:hover img {
-    -webkit-animation-name: slideFooter;
-    animation-name: slideFooter;
-    -webkit-animation-duration: 300ms;
-    animation-duration: 300ms;
-    -webkit-animation-delay: 150ms;
-    animation-delay: 150ms;
-}
 .listed-prop-own-text{
     color: #3D3D3D; 
 font-size: 16px;
@@ -610,7 +591,7 @@ ul.listed-menu-proptby li:hover {
     padding: 30px 10px;
     overflow-x: hidden;
     overflow-y: auto; 
-    background-color: rgb(0 0 0 / 60%);
+    background-color: rgb(0 0 0 / 75%);
     -webkit-animation-name: fadeInmodal;
     animation-name: fadeInmodal; 
  } 
@@ -672,8 +653,8 @@ ul.listed-menu-proptby li:hover {
     background-color: #ffffff;
     border-radius: 12px;
     width: 100%;
-    -webkit-animation-name: fadeInUpListed;
-    animation-name: fadeInUpListed;
+    -webkit-animation-name: fadeInUpModal;
+    animation-name: fadeInUpModal;
     animation-duration: 0.4s;
     -webkit-animation-duration: 0.4s;
     animation-delay: 350ms;
@@ -685,7 +666,33 @@ ul.listed-menu-proptby li:hover {
     transform-origin: top center;
     -webkit-transform-origin: top center;
     position: relative;
-}
+} 
+    @-webkit-keyframes fadeInUpModal {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0) perspective(800px) rotateX(-5deg);
+    transform: translate3d(0, 10%, 0) perspective(800px) rotateX(-5deg);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInUpModal {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0) perspective(800px) rotateX(-5deg);
+    transform: translate3d(0, 10%, 0) perspective(800px) rotateX(-5deg);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+
 .modal-site-close {
     position: absolute;
     right: 12px;
@@ -750,63 +757,7 @@ ul.listed-menu-proptby li:hover {
     background-color: #fff;
     padding: 0 7px;
 }
-.customerdt-form .form-label {
-    color: #585858;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    display: block;
-    margin-bottom: 8px;
-}
 
-.customerdt-form .form-control {
-    display: block;
-    font-size: 15px;
-    width: 100%;
-    border: solid 1px #fafafa;
-    background: #fbfbfb;
-    color: #121212;
-    resize: none;
-    padding: 12px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    font-family: "Mulish", sans-serif;
-    -webkit-box-shadow: rgb(0 0 0 / 6%) 0px 1px 2px 0px inset;
-    -moz-box-shadow: rgb(0 0 0 / 6%) 0px 1px 2px 0px inset;
-    box-shadow: rgb(0 0 0 / 6%) 0px 1px 2px 0px inset;
-    transition: all 100ms ease-in;
-    -webkit-transition: all 100ms ease-in;
-    -moz-transition: all 100ms ease-in;
-    -ms-transition: all 100ms ease-in;
-    -o-transition: all 100ms ease-in;
-}
-
-.customerdt-form .form-control,.btn.customerdt-btn {
-    height: 50px;
-}
-
-.btn.customerdt-btn {
-    width: 180px; 
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-         border-radius: 10px;
-}
-
-.customerdt-form .form-control:focus {
-    border-color: #00c194;
-    box-shadow: 0 0 0 0.2rem rgb(0 193 148 / 10%);
-    background-color: #ffffff;
-}
-.customerdt-form textarea.form-control {
-    height: 108px;
-}
-
-.customerdt-form .form-group {
-    margin-bottom: 20px;
-}
- 
 .customerdt-tbn-center {
     text-align: center;
     margin-top: 19px;

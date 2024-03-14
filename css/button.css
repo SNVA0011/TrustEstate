@@ -17,11 +17,6 @@
     font-weight: 500;
     line-height: normal;
     border-radius: 10px;
-    transition: all 300ms;
-    -webkit-transition: all 300ms;
-    -moz-transition: all 300ms;
-    -ms-transition: all 300ms;
-    -o-transition: all 300ms;
     min-width: 135px;
     position: relative;
     overflow: hidden;
@@ -38,10 +33,12 @@
             transition-delay: 220ms;
 }
 
+.btnsite-outline:hover,
 .btn.btnsite-greenfill:hover{
     border-color: #009d78;
     background-color: #009d78;
 }
+
 .btn span {
     position: relative;
     z-index: 2;
@@ -104,11 +101,11 @@
     width: 150%;
     background-color: rgba(255, 255, 255, 0);
     transition: all 0.4s ease-in-out;
-    transition-delay: 180ms;
-    -webkit-transition-delay: 180ms;
-    -moz-transition-delay: 180ms;
-    -ms-transition-delay: 180ms;
-    -o-transition-delay: 180ms;
+    transition-delay: 140ms;
+    -webkit-transition-delay: 140ms;
+    -moz-transition-delay: 140ms;
+    -ms-transition-delay: 140ms;
+    -o-transition-delay: 140ms;
 }
 
 .CheapProperty-box a:hover .ratioFind::after{
@@ -122,49 +119,18 @@
 .btnsite-outline {
     color: #000;
 }
-
-.btnsite-outline:hover {
-    background-color: #00C194;
+.btnsite-outline:hover{
     color: #ffffff;
 }
 
-@-webkit-keyframes fadeInBtbimg {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-@keyframes fadeInBtbimg {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
 
 .btnsite-outline:hover img.after,
 .btnsite-outline img.before {
     display: inline-block;
     -webkit-animation-name: fadeInBtbimg;
     animation-name: fadeInBtbimg;
-    -webkit-animation-duration: 300ms;
-    animation-duration: 300ms;
-    -webkit-animation-delay: 180ms;
-    animation-delay: 180ms;
+    -webkit-animation-duration: 240ms;
+    animation-duration: 240ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -182,4 +148,94 @@
     vertical-align: middle;
     vertical-align: middle;
     margin-top: -2px;
+}
+
+.btn.customerdt-btn {
+    width: 180px; 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+         border-radius: 10px; 
+}
+ 
+
+.btn.PropTyBtnSearch {
+    min-width: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.btn.PropTyBtnSearch img {
+    margin: 0;
+    max-width: none;
+    width: 32px;
+}
+
+.btn.PropTyBtnSearch:hover img {
+    -webkit-animation-name: slideFooter;
+    animation-name: slideFooter;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 150ms;
+    animation-delay: 150ms;
+}
+.btn.loginsign-btn {
+    width: 100%;
+}
+
+.btn.customerdt-btn, .btn.loginsign-btn {
+    font-weight: 700;
+}
+.btn.sign-bygoogle {
+    background: transparent;
+    width: 100%;
+    height: 50px;
+    color: #3d3d3d;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-color: #e6e6e6;
+}
+.btn.sign-bygoogle:after {
+    background-color: rgb(0 193 148 / 6%);
+}
+img.icons-google-logo {
+    width: 22px;
+    margin-left: 0;
+    margin-right: 8px;
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    margin-top: -11px;
+}
+.btn.sign-bygoogle:hover {
+    border-color: #00c194;
+}
+
+@-webkit-keyframes fadeInBtbimg {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-80%, 0, 0);
+        transform: translate3d(-80%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInBtbimg {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-80%, 0, 0);
+        transform: translate3d(-80%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
 }

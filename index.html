@@ -63,7 +63,11 @@
                <div class="btn-login-toggler">
                   <button class="btn btnsite-outline" onclick="openModalPopup('CustomerSignin')">
                      <span>
-                        Login
+                        <img src="/images/user-login.webp" class="before" alt="user-login" width="22" height="22">
+                        <img src="/images/user-login-white.webp" class="after" alt="user-login-white" width="22"
+                           height="22">
+
+                        Login / Register
                      </span>
                   </button>
                </div>
@@ -828,7 +832,7 @@
                <p>Please fill out this form with the required information</p>
             </div>
 
-            <div class="customerdt-form">
+            <div class="customerdt-form form-site">
                <div class="customerdt-label">Your Details</div>
                <div class="row align-items-center">
                   <div class="bsCol col-sm-6">
@@ -875,21 +879,165 @@
    <!--======= End Popups (Customer required information Popup) =======-->
 
 
-      <!--========= Popups (Customer required information Popup) =========-->
-      <div class="modal-site" id="CustomerSignin" onclick="closeModalPopup('CustomerSignin')">
-         <div class="modal-dialog-centered customer-signin-dialog">
-            <div class="modal-site-body customer-signin-popup" onclick="eventStopPagation(event)">
-               <div class="modal-site-close" onclick="closeModalPopup('CustomerSignin')">
-                  <img src="/images/close-icon-modal.webp" alt="close-icon-modal" width="28" height="28" />
-               </div>
-               <div class="lets-start">
-                  <h5>Sign In & Access Your Account</h5> 
-               </div> 
-   
+   <!--========= Popups (Customer required information Popup) =========-->
+   <div class="modal-site" id="CustomerSignin" onclick="closeModalPopup('CustomerSignin')">
+      <div class="modal-dialog-centered customer-signin-dialog">
+         <div class="modal-site-body customer-signin-popup" onclick="eventStopPagation(event)">
+            <div class="modal-site-close" onclick="closeModalPopup('CustomerSignin')">
+               <img src="/images/close-icon-modal.webp" alt="close-icon-modal" width="28" height="28" />
             </div>
+
+
+
+            <div class="row">
+               <div class="bsCol col-12 col-md-7">
+
+                  <div class="ratioFind customer-sign-wrap">
+                     <img src="/images/sofa-green-living-room.webp" alt="sofa-green-living-room" class="whtchp-cover">
+                     <div class="signin-brand-cover">
+                        <div class="signin-brand-heading">
+                           Embark on a joyful
+                           journey to find exactly what you need.
+                        </div>
+                        <div class="signin-brand-logo">
+                           <img src="/images/signin-brand-logo.webp" alt="signin-brand-logo" width="182" height="46">
+                        </div>
+                        <div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="bsCol col-12 col-md-5">
+
+
+                  <div class="signin-right-acc showsign" id="CustomerLogin">
+                     <div class="signin-start">
+                        <h5><span>Sign In</span> & Access Your Account</h5>
+                     </div>
+                     <div class="form-site">
+                        <div class="row align-items-center">
+                           <div class="bsCol col-12">
+                              <div class="form-group">
+                                 <label class="form-label" for="typeemail-lb">Email </label>
+                                 <input type="email" class="form-control" id="typeemail-lb"
+                                    placeholder="Enter your Email">
+                              </div>
+                           </div>
+                           <div class="bsCol col-12">
+                              <div class="form-group">
+                                 <label class="form-label" for="passw-lb">Password </label>
+                                 <input type="password" class="form-control" id="passw-lb"
+                                    placeholder="Enter your Password">
+                              </div>
+                           </div>
+
+                           <div class="bsCol col-7">
+                              <label class="switch-sitecase">
+                                 <input class="cb cb1" type="checkbox" name="keepme-sign" />
+                                 <i></i>
+                                 <span> Keep me sign in</span>
+                              </label>
+
+                           </div>
+                           <div class="bsCol col-5 forgetpass-right">
+                              <div class="forgetpass-link">Forget Password?</div>
+                           </div>
+
+                           <div class="bsCol col-12 customerdt-tbn-center loginsign-mt">
+                              <button
+                                 class="btn btnsite-greenfill customerdt-btn loginsign-btn"><span>Login</span></button>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="customerdt-by-google">
+                        <div class="devider-for-google">
+                           <span>Or</span>
+                        </div>
+                        <button class="btn sign-bygoogle">
+                           <img src="/images/icons-google.webp" alt="icons-google-logo" class="icons-google-logo"
+                              width="44" height="44">
+                           <span>
+                              Continue With Google
+                           </span>
+                        </button>
+                        <p>
+                           Don’t you have an account ? <span onclick="openAccountTab('CustomerRegis')">Register</span>
+                        </p>
+                     </div>
+                  </div>
+
+
+                  <div class="signin-right-acc" id="CustomerRegis">
+                     <div class="signin-start">
+                        <h5>Welcome ! <span>Register</span> now</h5>
+                     </div>
+                     <div class="form-site">
+                        <div class="row align-items-center">
+                           <div class="bsCol col-12">
+                              <div class="form-group">
+                                 <label class="form-label" for="emailreg-lb">Email </label>
+                                 <input type="email" class="form-control" id="emailreg-lb"
+                                    placeholder="Enter your Email">
+                              </div>
+                           </div>
+                           <div class="bsCol col-12">
+                              <div class="form-group">
+                                 <label class="form-label" for="passwreg-lb">Password </label>
+                                 <input type="password" class="form-control" id="passwreg-lb"
+                                    placeholder="Enter your Password">
+                              </div>
+                           </div>
+
+                           <div class="bsCol col-12">
+                              <div class="form-group">
+                                 <label class="form-label" for="phonereg-lb">Phone Number</label>
+
+                                 <div class="phonereg-wrap">
+                                    <input type="number" class="form-control phonereg-1" placeholder="+91">
+
+                                    <input type="number" class="form-control phonereg-2" id="phonereg-lb"
+                                       placeholder="Enter your Phone Number">
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="bsCol col-12">
+                              <label class="switch-sitecase">
+                                 <input class="cb cb1" type="checkbox" name="keepme-sign" />
+                                 <i></i>
+                                 <span> I agree to TrustEsate <a href="#">T&C</a>, <a href="#">Privacy Policy</a>, & <a
+                                       href="#">Cookie Policy</a></span>
+                              </label>
+
+                           </div>
+
+                           <div class="bsCol col-12 customerdt-tbn-center loginsign-mt">
+                              <button class="btn btnsite-greenfill customerdt-btn loginsign-btn"><span>Sign
+                                    Up</span></button>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="customerdt-by-google">
+                        <p>
+                           Already have an account ? <span onclick="openAccountTab('CustomerLogin')">Login</span>
+                        </p>
+                     </div>
+                  </div>
+
+
+               </div>
+            </div>
+
+
+
          </div>
       </div>
-      <!--======= End Popups (Customer required information Popup) =======-->
+   </div>
+   <!--======= End Popups (Customer required information Popup) =======-->
 
 
    <script type="text/javascript" src="/js/header-animate.js"></script>
@@ -898,4 +1046,5 @@
 
 
 </body>
+
 </html>
